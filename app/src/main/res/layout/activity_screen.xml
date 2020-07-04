@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background"
+            android:scaleType="centerCrop"
+            android:alpha="0.4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:textColor="#dee1ec"
+                android:textSize="45sp"
+                android:gravity="center"
+                android:fontFamily="@font/actor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_text"
+                    android:textSize="20sp"
+                    android:textColor="#fdfdfd"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/actor"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/google"
+                    android:background="@drawable/rounded_button_google"
+                    android:id="@+id/google"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/actor"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facebook"
+                    android:background="@drawable/rounded_button_facebook"
+                    android:id="@+id/facebook"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/actor"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/already"
+                        android:textColor="#e2f3f5"
+                        android:textSize="15sp"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/actor"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/login"
+                        android:id="@+id/login"
+                        android:textColor="#00aeff"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/actor"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

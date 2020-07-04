@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+   <com.google.android.material.textfield.TextInputEditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:layout_margin="10dp"
+       android:id="@+id/searching"
+       android:textColor="#5d5d5a"
+       android:textColorHint="#6F666668"
+       android:hint="@string/search"
+       android:focusable="true"
+       android:inputType="textCapCharacters">
+   </com.google.android.material.textfield.TextInputEditText>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/recycler_view_content"
+       android:layout_margin="10dp"/>
+
+</LinearLayout>

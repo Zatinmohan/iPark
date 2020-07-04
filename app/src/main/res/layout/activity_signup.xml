@@ -1,0 +1,226 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlHardcoded"
+    android:background="#000000"
+    android:id="@+id/coordinator.layout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:alpha="0.4"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar.layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing.toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <ImageView
+                android:id="@+id/main.imageview.placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background"
+                android:alpha="0.4"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.9"/>
+
+            <FrameLayout
+                android:id="@+id/main.framelayout.title"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.3">
+
+                <LinearLayout
+                    android:id="@+id/linear.layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/secondary.text.view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="bottom|center"
+                        android:text="Hey, Jatin Mohan"
+                        android:fontFamily="@font/actor"
+                        android:textColor="#dee1ec"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="50dp"
+        app:behavior_overlapTop="80dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card.view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:contentPadding="16dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="#4d4f53"
+                android:alpha="0.8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup"
+                        android:fontFamily="@font/actor"
+                        android:textColor="#dee1ec"
+                        android:textSize="40sp"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/signup_password"
+                        android:background="@drawable/edit_rounded"
+                        android:hint="@string/password"
+                        android:padding="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="textPassword"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/re.password"
+                        android:background="@drawable/edit_rounded"
+                        android:hint="@string/retype_password"
+                        android:padding="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="textPassword"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Signup.Car.number"
+                        android:background="@drawable/edit_rounded"
+                        android:hint="@string/plate_number"
+                        android:padding="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="textCapCharacters"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Signup.Car.name"
+                        android:background="@drawable/edit_rounded"
+                        android:hint="@string/car_name"
+                        android:padding="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:inputType="text"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/submit.button"
+                        android:background="@drawable/button_rounded"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/submit"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:visibility="invisible"
+        android:id="@+id/signup_progressbar"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_anchor="@id/main.framelayout.title"
+        app:title=""
+        app:layout_collapseMode="pin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:id="@+id/main.textview.title"
+                android:text="Hey, Jatin Mohan"
+                android:textColor="#dee1ec"
+                android:fontFamily="@font/actor"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/user3"
+            app:finalHeight="@dimen/image_final_width"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:id="@+id/logo_image"
+            app:layout_behavior="com.example.ipark.Misc.CollapsingImageBehavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

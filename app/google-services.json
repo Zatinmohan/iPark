@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929797328033",
+    "firebase_url": "https://ipark-f1c23.firebaseio.com",
+    "project_id": "ipark-f1c23",
+    "storage_bucket": "ipark-f1c23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929797328033:android:15c9cd305e9d70c2f374e0",
+        "android_client_info": {
+          "package_name": "com.example.ipark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929797328033-jqbqlap8h6sn8qqpesk9h6ftbsbqlrb7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ipark",
+            "certificate_hash": "1c7a51f144da8fcb7cd600eb66f394f0631e4883"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeRINJd5JFk4TO7jJXU5LBxYo61H4yw0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

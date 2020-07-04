@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">iPark</string>
+
+    <!--Search Detail-->
+    <string name="car_number">Car Number</string>
+    <string name="car_type">Car Type</string>
+    <string name="model">Model</string>
+    <string name="reg_date">Registration Date</string>
+    <string name="engine">Engine Number</string>
+    <string name="fuel">Fuel Type</string>
+    <string name="insurence">Insurance Date</string>
+    <string name="chassis">Chassis Number</string>
+
+    <!--Setting Activity-->
+    <string name="about_toolbar">About Me</string>
+    <string name="logout">Logout</string>
+
+    <!--Signup Activity-->
+    <string name="retype_password">Re-Type Password</string>
+    <string name="plate_number">UK07AR0000</string>
+    <string name="car_name">Car Name</string>
+    <string name="submit">Submit</string>
+
+    <!--Dialogue Activity-->
+    <string name="verify">Verify</string>
+    <string name="captcha">Enter Captcha Code</string>
+
+
+    <!--Activity Screen-->
+    <string name="signup">Sign Up</string>
+    <string name="signup_text">It is easier to sign up now</string>
+    <string name="google">Continue With Google</string>
+    <string name="facebook">Continue With Facebook</string>
+    <string name="already">Already have an Account?</string>
+    <string name="login">Login</string>
+
+    <!--Activity Main-->
+    <string name="main">Main</string>
+    <string name="spaces">Available Spaces</string>
+
+    <!--Login Activity-->
+    <string name="signin">Sign in</string>
+    <string name="email">Email ID</string>
+    <string name="password">Password</string>
+    <string name="forget">Forget Password?</string>
+    <string name="member">Not a member yet? Sign up Here</string>
+
+    <!--Find Activity-->
+    <string name="search">Search</string>
+
+    <!--About Activity-->
+    <string name = "About_Toolbar">About iPark</string>
+    <string name="developer">Developer</string>
+    <string name="name">Jatin Mohan</string>
+    <string name="thanks">Special Thanks</string>
+    <string name="name2">Chandramohan Sudar</string>
+    <string name="resources">Resources</string>
+    <string name="sources">Sources</string>
+    <string name="seva">Parivahan Seva</string>
+    <string name="version">Version</string>
+    <string name="build">Build Version</string>
+    <string name="bversion">1.0</string>
+    <string name="database">Database Version</string>
+    <string name="dversion">1.0</string>
+</resources>
